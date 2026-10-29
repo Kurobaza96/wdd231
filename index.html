@@ -1,13 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Emanuel Herrera">
   <meta name="theme-color" content="#123047">
-  <meta name="description"
-    content="Emanuel Herrera's WDD 231 course home page featuring web development projects and Web and Computer Programming certificate courses.">
+  <meta name="description" content="Emanuel Herrera's WDD 231 course home page featuring web development projects and Web and Computer Programming certificate courses.">
 
   <title>Home | Emanuel Herrera | WDD 231</title>
 
@@ -34,8 +33,10 @@
         <span>Emanuel Herrera</span>
       </a>
 
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="primary-navigation"
-        aria-expanded="false" aria-label="Open navigation menu">
+      <button class="menu-toggle" id="menu-toggle" type="button"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        aria-label="Open navigation menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -73,7 +74,7 @@
             and exploring new ideas.
           </p>
 
-          <div class="quick-tags" aria-label="Areas of interest">
+          <div class="quick-tags" role="group" aria-label="Areas of interest">
             <span>Web development</span>
             <span>Problem solving</span>
             <span>Design</span>
@@ -84,8 +85,12 @@
       <section class="panel photo-panel" aria-labelledby="photo-title">
         <h2 id="photo-title">Student Photo</h2>
         <div class="photo-wrap">
-          <img class="student-photo" src="images/profile-placeholder.svg"
-            alt="Illustrated portrait placeholder; replace with your student photograph" width="480" height="520">
+          <img
+            class="student-photo"
+            src="images/profile-placeholder.svg"
+            alt="Illustrated portrait placeholder; replace with your student photograph"
+            width="480"
+            height="520">
           <p class="photo-caption">
             Web developer in training · Guatemala
           </p>
@@ -107,7 +112,9 @@
           <button type="button" data-filter="WDD" aria-pressed="false">WDD</button>
         </div>
 
-        <ul class="course-list" id="course-list" aria-live="polite" aria-relevant="additions removals">
+        <ul class="course-list" id="course-list"
+          aria-live="polite"
+          aria-relevant="additions removals">
         </ul>
 
         <p class="credit-total" aria-live="polite">
@@ -120,22 +127,21 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="social-links" aria-label="Social media links">
-
+      <nav class="social-links" aria-label="Social media links">
         <a href="https://github.com/kurobaza96/wdd231" target="_blank" rel="noopener noreferrer"
           aria-label="WDD231 GitHub repository">
           <img src="images/github.svg" alt="" width="25" height="25">
         </a>
-
+      
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
           <img src="images/linkedin.svg" alt="" width="25" height="25">
         </a>
-
+      
         <a href="https://kurobaza96.github.io/cvexample2/#home" target="_blank" rel="noopener noreferrer"
           aria-label="Portfolio">
           <img src="images/portfolio.svg" alt="" width="25" height="25">
         </a>
-      </div>
+      </nav>
 
       <p>
         &copy; <span id="currentyear"></span> &bull;
@@ -148,6 +154,5 @@
     </div>
   </footer>
 </body>
-
 </html>
 
