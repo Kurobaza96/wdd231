@@ -12,7 +12,7 @@ const courses = [
     certificate: "Web and Computer Programming",
     description: "Foundations of programming and problem solving.",
     technology: ["Python"],
-    completed: false
+    completed: true
   },
   {
     subject: "WDD",
@@ -32,7 +32,7 @@ const courses = [
     certificate: "Web and Computer Programming",
     description: "Develop reusable functions and organized programs.",
     technology: ["Python"],
-    completed: false
+    completed: true
   },
   {
     subject: "CSE",
