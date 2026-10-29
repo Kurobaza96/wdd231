@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">EH monogram logo</title>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#123047"/>
+  <!-- Center the original EH lettering horizontally and vertically. -->
+  <g transform="translate(-5 0)">
+    <path d="M16 18h16v6H23v5h8v6h-8v5h10v6H16z" fill="#fff"/>
+    <path d="M37 18h7v11h7V18h7v28h-7V35h-7v11h-7z" fill="#57d8c0"/>
+  </g>
+</svg>

@@ -1,40 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic HTML Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 2rem;
-        line-height: 1.6;
-      }
-      header {
-        border-bottom: 2px solid #333;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-      }
-      h1 {
-        margin-bottom: 0.5rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome</h1>
-    </header>
 
-    <main>
-      <p>This is a basic HTML page.</p>
-      <p>You can add paragraphs, headings, lists, and other content here.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emanuel Herrera">
+  <meta name="theme-color" content="#123047">
+  <meta name="description"
+    content="Emanuel Herrera's WDD 231 course home page featuring web development projects and Web and Computer Programming certificate courses.">
 
-      <h2>Example List</h2>
-      <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-      </ul>
-    </main>
-  </body>
+  <title>Home | Emanuel Herrera | WDD 231</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Emanuel Herrera - Home">
+        <img src="images/logo.svg" alt="" width="52" height="52">
+        <span>Emanuel Herrera</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="primary-navigation"
+        aria-expanded="false" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="chamber/index.html">Chamber</a>
+      <a href="final/index.html">Final</a>
+    </div>
+  </nav>
+
+  <main id="main-content" class="container">
+    <p class="page-kicker">WDD 231 · Web Frontend Development I</p>
+    <h1>Home</h1>
+
+    <div class="content-grid">
+      <section class="panel about-panel" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
+
+        <div class="panel-body">
+          <p class="about-intro">
+            Hello! I'm Emanuel, a technology professional and web development student from Guatemala.
+          </p>
+          <p>
+            I enjoy solving problems, improving processes, and turning complex
+            ideas into clear, useful digital experiences. Studying web development
+            allows me to combine analytical thinking with creativity.
+          </p>
+          <p>
+            Outside of technology, I enjoy music, art, learning languages,
+            and exploring new ideas.
+          </p>
+
+          <div class="quick-tags" aria-label="Areas of interest">
+            <span>Web development</span>
+            <span>Problem solving</span>
+            <span>Design</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel photo-panel" aria-labelledby="photo-title">
+        <h2 id="photo-title">Student Photo</h2>
+        <div class="photo-wrap">
+          <img class="student-photo" src="images/profile-placeholder.svg"
+            alt="Illustrated portrait placeholder; replace with your student photograph" width="480" height="520">
+          <p class="photo-caption">
+            Web developer in training · Guatemala
+          </p>
+        </div>
+      </section>
+
+      <section class="panel courses-panel" aria-labelledby="courses-title">
+        <h2 id="courses-title">Web Certificate Courses</h2>
+
+        <div class="courses-head">
+          <p>
+            Explore the courses required for the Web and Computer Programming certificate.
+          </p>
+        </div>
+
+        <div class="filter-group" role="group" aria-label="Filter courses by subject">
+          <button type="button" data-filter="ALL" aria-pressed="true">All</button>
+          <button type="button" data-filter="CSE" aria-pressed="false">CSE</button>
+          <button type="button" data-filter="WDD" aria-pressed="false">WDD</button>
+        </div>
+
+        <ul class="course-list" id="course-list" aria-live="polite" aria-relevant="additions removals">
+        </ul>
+
+        <p class="credit-total" aria-live="polite">
+          Total credits for displayed courses:
+          <strong id="credit-total">0</strong>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="social-links" aria-label="Social media links">
+
+        <a href="https://github.com/kurobaza96/wdd231" target="_blank" rel="noopener noreferrer"
+          aria-label="WDD231 GitHub repository">
+          <img src="images/github.svg" alt="" width="25" height="25">
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <img src="images/linkedin.svg" alt="" width="25" height="25">
+        </a>
+
+        <a href="https://kurobaza96.github.io/cvexample2/#home" target="_blank" rel="noopener noreferrer"
+          aria-label="Portfolio">
+          <img src="images/portfolio.svg" alt="" width="25" height="25">
+        </a>
+      </div>
+
+      <p>
+        &copy; <span id="currentyear"></span> &bull;
+        Emanuel Herrera &bull; Guatemala
+      </p>
+
+      <p class="modified">
+        Last Modified: <span id="lastModified"></span>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
+
