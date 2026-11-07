@@ -1,0 +1,82 @@
+@media screen and (min-width: 42rem) {
+
+    .directory-toolbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+
+    .members.list-view .member-content {
+        display: grid;
+        grid-template-columns: minmax(11rem, 1fr) minmax(15rem, 1.3fr);
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    .members.list-view .member-meta {
+        margin-bottom: 0.35rem;
+    }
+
+    .members.list-view .member-details {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 52rem) {
+
+    .header-content {
+        padding-block: 1rem;
+    }
+
+    .brand img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .site-nav {
+        display: block;
+        background: var(--navy-deep);
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .nav-links a {
+        padding: 0.85rem 1.65rem;
+        border-radius: 0.25rem 0.25rem 0 0;
+    }
+
+    .directory-main {
+        padding-top: 2.7rem;
+    }
+
+    .members.list-view .member-content {
+        grid-template-columns: minmax(16rem, 1fr) minmax(24rem, 1.6fr);
+    }
+
+    .members.list-view .member-details {
+        grid-template-columns:
+            minmax(12rem, 1fr) minmax(8rem, 0.8fr) minmax(7rem, 0.65fr);
+        gap: 0.8rem;
+    }
+
+    .members.list-view .member-details>div {
+        display: block;
+    }
+
+    .members.list-view .member-details dt {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-bottom: 0.1rem;
+    }
+}

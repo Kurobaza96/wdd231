@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Abstract logo for Conecta Learning Hub">
+<rect width="640" height="360" fill="#e4f5fb"/>
+<circle cx="320" cy="180" r="135" fill="#1c6381"/>
+<g transform="translate(320 180)" fill="none" stroke="#e4f5fb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-70 q-46,-27 -105,-8 v126 q59,-19 105,9 q46,-28 105,-9 v-126 q-59,-19 -105,8z M0,-70 V57 M-80,-40 q25,-6 53,3 M-80,-14 q25,-6 53,3 M30,-40 q25,-8 52,-3 M30,-14 q25,-8 52,-3"/></g>
+<path d="M0 310 Q160 266 320 314 T640 307 V360 H0Z" fill="#1c6381" opacity=".12"/>
+</svg>

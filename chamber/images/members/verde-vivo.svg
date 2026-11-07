@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Abstract logo for Verde Vivo Gardens">
+<rect width="640" height="360" fill="#e3f4de"/>
+<circle cx="320" cy="180" r="135" fill="#26684e"/>
+<g transform="translate(320 180)" fill="none" stroke="#e3f4de" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M0,95 V-34 M0,10 q-100,-11 -93,-83 q75,-4 93,83 M0,-5 q101,-30 91,-90 q-75,2 -91,90"/><path d="M-33,88 H33"/></g>
+<path d="M0 310 Q160 266 320 314 T640 307 V360 H0Z" fill="#26684e" opacity=".12"/>
+</svg>

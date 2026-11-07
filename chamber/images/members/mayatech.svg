@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Abstract logo for MayaTech Solutions">
+<rect width="640" height="360" fill="#e4ebff"/>
+<circle cx="320" cy="180" r="135" fill="#273a70"/>
+<g transform="translate(320 180)" fill="none" stroke="#e4ebff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><rect x="-88" y="-75" width="176" height="144" rx="18"/><path d="M-50,-28 h100 v67 h-100z M-46,89 h92 M-5,69 v20"/><path d="M-76,-53 l-35,-25 M75,-53 l35,-25 M-76,39 l-40,17 M76,39 l40,17"/></g>
+<path d="M0 310 Q160 266 320 314 T640 307 V360 H0Z" fill="#273a70" opacity=".12"/>
+</svg>

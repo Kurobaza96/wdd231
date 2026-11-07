@@ -1,0 +1,83 @@
+
+[
+  {
+    "name": "Altura Coffee Collective",
+    "address": "Zona 4, Guatemala City, Guatemala",
+    "phone": "+502 0000-0101",
+    "website": "https://example.com/?business=altura-coffee",
+    "image": "altura-coffee.svg",
+    "membership": 3,
+    "category": "Food & Beverage",
+    "description": "A community-centered coffee collective featuring locally inspired blends."
+  },
+  {
+    "name": "MayaTech Solutions",
+    "address": "Zona 10, Guatemala City, Guatemala",
+    "phone": "+502 0000-0102",
+    "website": "https://example.com/?business=mayatech",
+    "image": "mayatech.svg",
+    "membership": 3,
+    "category": "Technology",
+    "description": "Digital tools and software support for growing Guatemalan businesses."
+  },
+  {
+    "name": "Verde Vivo Gardens",
+    "address": "Zona 15, Guatemala City, Guatemala",
+    "phone": "+502 0000-0103",
+    "website": "https://example.com/?business=verde-vivo",
+    "image": "verde-vivo.svg",
+    "membership": 2,
+    "category": "Sustainability",
+    "description": "Urban garden design, plants, and greener workplaces."
+  },
+  {
+    "name": "Quetzal Logistics",
+    "address": "Zona 12, Guatemala City, Guatemala",
+    "phone": "+502 0000-0104",
+    "website": "https://example.com/?business=quetzal-logistics",
+    "image": "quetzal-logistics.svg",
+    "membership": 2,
+    "category": "Transport",
+    "description": "Flexible delivery planning and distribution support for local commerce."
+  },
+  {
+    "name": "Luna Artisan Studio",
+    "address": "Zona 1, Guatemala City, Guatemala",
+    "phone": "+502 0000-0105",
+    "website": "https://example.com/?business=luna-artisan",
+    "image": "luna-artisan.svg",
+    "membership": 1,
+    "category": "Arts & Crafts",
+    "description": "Handcrafted gifts, custom design, and creative workshops."
+  },
+  {
+    "name": "Conecta Learning Hub",
+    "address": "Zona 9, Guatemala City, Guatemala",
+    "phone": "+502 0000-0106",
+    "website": "https://example.com/?business=conecta-learning",
+    "image": "conecta-learning.svg",
+    "membership": 2,
+    "category": "Education",
+    "description": "Practical workshops for professional and entrepreneurial development."
+  },
+  {
+    "name": "Mercado del Sol",
+    "address": "Zona 11, Guatemala City, Guatemala",
+    "phone": "+502 0000-0107",
+    "website": "https://example.com/?business=mercado-del-sol",
+    "image": "mercado-del-sol.svg",
+    "membership": 1,
+    "category": "Retail",
+    "description": "Everyday essentials and locally made goods in one friendly place."
+  },
+  {
+    "name": "Salud Integral GT",
+    "address": "Zona 14, Guatemala City, Guatemala",
+    "phone": "+502 0000-0108",
+    "website": "https://example.com/?business=salud-integral",
+    "image": "salud-integral.svg",
+    "membership": 3,
+    "category": "Wellness",
+    "description": "Wellness education and community-focused preventive care services."
+  }
+]

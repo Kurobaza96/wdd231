@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Abstract logo for Mercado del Sol">
+<rect width="640" height="360" fill="#fff0d4"/>
+<circle cx="320" cy="180" r="135" fill="#855323"/>
+<g transform="translate(320 180)" fill="none" stroke="#fff0d4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M-92,-20 H92 V82 H-92z M-105,-20 H105 L88,-78 H-88z M-50,-78 L-58,-20 M0,-78 V-20 M50,-78 L58,-20 M-39,82 V20 H23 V82 M41,20 H75 V50 H41z"/></g>
+<path d="M0 310 Q160 266 320 314 T640 307 V360 H0Z" fill="#855323" opacity=".12"/>
+</svg>

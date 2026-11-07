@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Abstract logo for Quetzal Logistics">
+<rect width="640" height="360" fill="#f6e9d2"/>
+<circle cx="320" cy="180" r="135" fill="#764f3c"/>
+<g transform="translate(320 180)" fill="none" stroke="#f6e9d2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><rect x="-110" y="-38" width="145" height="86" rx="9"/><path d="M35,-12 H83 l32,31 v29 H35z M83,-12 v31 h32"/><circle cx="-66" cy="54" r="21"/><circle cx="78" cy="54" r="21"/><path d="M-120,74 H124"/></g>
+<path d="M0 310 Q160 266 320 314 T640 307 V360 H0Z" fill="#764f3c" opacity=".12"/>
+</svg>
