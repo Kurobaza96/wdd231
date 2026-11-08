@@ -23,15 +23,19 @@
     <meta property="og:image" content="https://kurobaza96.github.io/wdd231/chamber/images/chamber-social.png">
     <meta property="og:image:alt" content="Guatemala City Chamber of Commerce directory graphic">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
+    <!-- Google Fonts: fewer font weights -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- CSS for tablets and desktops -->
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 42rem)">
 
     <!-- JavaScript -->
     <script src="scripts/main.js" defer></script>
