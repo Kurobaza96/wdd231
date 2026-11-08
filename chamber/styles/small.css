@@ -157,21 +157,9 @@ a:hover {
 
 /* Hero */
 .hero {
-    background-color: #10283e;
+    background-color: var(--navy);
     color: #ffffff;
     padding: clamp(2.7rem, 7vw, 5rem) 0;
-}
-
-.hero .eyebrow {
-    color: #f0bf58;
-}
-
-.hero h1 {
-    color: #ffffff;
-}
-
-.hero p:last-child {
-    color: #e4edf4;
 }
 
 .eyebrow {
@@ -188,6 +176,7 @@ a:hover {
     font-size: clamp(2rem, 7vw, 3.8rem);
     line-height: 1.08;
     letter-spacing: -0.04em;
+    color: #ffffff;
 }
 
 .hero p:last-child {
