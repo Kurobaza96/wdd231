@@ -69,12 +69,14 @@ a:hover {
     padding-block: 0.85rem;
 }
 
-.brand {
+.brand,
+.brand:visited {
     display: flex;
     align-items: center;
     min-width: 0;
     gap: 0.65rem;
     text-decoration: none;
+    color: #ffffff;
 }
 
 .brand img {
@@ -155,9 +157,21 @@ a:hover {
 
 /* Hero */
 .hero {
-    background: linear-gradient(128deg, var(--navy), #1c4a66);
-    color: #fff;
+    background-color: #10283e;
+    color: #ffffff;
     padding: clamp(2.7rem, 7vw, 5rem) 0;
+}
+
+.hero .eyebrow {
+    color: #f0bf58;
+}
+
+.hero h1 {
+    color: #ffffff;
+}
+
+.hero p:last-child {
+    color: #e4edf4;
 }
 
 .eyebrow {
