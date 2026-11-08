@@ -19,12 +19,11 @@ html {
 
 body {
     min-width: 320px;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.55;
     color: var(--text);
     background: var(--page);
 }
-
 button,
 a {
     -webkit-tap-highlight-color: transparent;
