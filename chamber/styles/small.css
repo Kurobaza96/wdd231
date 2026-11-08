@@ -3,14 +3,8 @@
     --navy: #10283e;
     --navy-deep: #091c2d;
     --gold: #f0bf58;
-    --gold-dark: #805515;
-    --page: #f4f7fa;
-    --surface: #ffffff;
-    --text: #1d3041;
-    --muted: #4c5e6d;
-    --line: #d8e2eb;
-    --radius: 0.95rem;
-    --shadow: 0 8px 22px rgb(16 40 62 / 8%);
+    --white: #ffffff;
+    --hero-description: #e4edf4;
 }
 
 html {
