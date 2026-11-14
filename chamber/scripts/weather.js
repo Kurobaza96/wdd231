@@ -1,6 +1,6 @@
 // OpenWeatherMap API Configuration
 
-const OPENWEATHER_API_KEY = "";
+const weatherUrl = "https://chamber-weather-api.emanuel-josue-herrera.workers.dev/";
 
 const WEATHER_LAT = 14.6349;
 const WEATHER_LON = -90.5069;
