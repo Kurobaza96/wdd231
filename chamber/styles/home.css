@@ -1,0 +1,305 @@
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: 23rem;
+    background: #163b56;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: relative;
+    min-height: 23rem;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(90deg,
+            rgba(5, 26, 43, 0.89),
+            rgba(5, 26, 43, 0.28));
+}
+
+.hero-copy {
+    padding-block: 3.5rem;
+}
+
+.hero-copy h1 {
+    color: #ffffff;
+    font-size: clamp(2.15rem, 6vw, 4rem);
+    line-height: 1.12;
+    margin: 0.4rem 0 1rem;
+}
+
+.hero-copy>p:not(.eyebrow) {
+    max-width: 35rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.eyebrow {
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+}
+
+/* JOIN BUTTON */
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 0.4rem;
+
+    background: #ffd17d;
+    color: #142d42;
+
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+    background: #ffffff;
+}
+
+/* HOME CONTENT */
+
+.home-content {
+    padding-block: 2.5rem 4rem;
+}
+
+.home-intro {
+    text-align: center;
+    max-width: 43rem;
+    margin: 0 auto 2rem;
+}
+
+.home-intro p {
+    margin-top: 0.6rem;
+}
+
+/* INFORMATION GRID */
+
+.home-information {
+    display: grid;
+    gap: 1rem;
+}
+
+.info-panel,
+.spotlight-card {
+    background: #ffffff;
+    border: 1px solid #d9e4ea;
+    border-radius: 0.75rem;
+
+    box-shadow: 0 5px 16px rgba(16, 49, 69, 0.08);
+
+    padding: 1.4rem;
+    min-width: 0;
+}
+
+.info-panel h2 {
+    font-size: 1.35rem;
+    margin-bottom: 1.1rem;
+}
+
+/* EVENTS */
+
+.event-item+.event-item {
+    border-top: 1px solid #dce5ea;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.event-item h3 {
+    font-size: 1.06rem;
+    margin: 0.3rem 0;
+}
+
+.event-date {
+    font-weight: 700;
+    color: #225e79;
+}
+
+.event-location,
+.weather-location,
+.demo-note {
+    font-size: 0.88rem;
+    color: #465d6b;
+}
+
+.demo-note {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* WEATHER */
+
+.weather-now {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-now img {
+    width: 72px;
+    height: 72px;
+}
+
+.weather-temp {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.weather-description {
+    text-transform: capitalize;
+}
+
+/* FORECAST */
+
+.forecast-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.forecast-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #e1e9ed;
+}
+
+.forecast-list li:last-child {
+    border-bottom: none;
+}
+
+.forecast-list strong {
+    white-space: nowrap;
+}
+
+/* SPOTLIGHTS */
+
+.spotlights-section {
+    margin-top: 3rem;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+
+.section-heading a {
+    font-weight: 700;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    text-align: center;
+}
+
+.spotlight-card img {
+    display: block;
+    max-width: 180px;
+    width: 100%;
+    height: 95px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.spotlight-card h3 {
+    font-size: 1.15rem;
+}
+
+.spotlight-card p {
+    margin: 0.45rem 0;
+    overflow-wrap: anywhere;
+}
+
+.spotlight-card a {
+    overflow-wrap: anywhere;
+}
+
+/* MEMBERSHIP BADGES */
+
+.membership-badge {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 2rem;
+
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    background: #d8e5ec;
+    color: #153e57;
+}
+
+.membership-badge.gold {
+    background: #ffe5a2;
+    color: #654300;
+}
+
+/* ERROR MESSAGES */
+
+.error-message {
+    color: #8c2525;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (min-width: 42rem) {
+
+    .home-information {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .events-panel {
+        grid-row: span 2;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media (min-width: 65rem) {
+
+    .home-information {
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+
+    .events-panel {
+        grid-row: auto;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
