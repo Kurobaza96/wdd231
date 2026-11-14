@@ -1,77 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Emanuel Herrera">
-  <meta name="description" content="Explore the Guatemala City Chamber of Commerce business directory, including member contact information and membership levels.">
-  <title>Home | Guatemala City Chamber of Commerce</title>
-  <link rel="icon" href="images/favicon.ico" sizes="any">
-  <link rel="icon" href="images/chamber-logo.svg" type="image/svg+xml">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Home | Guatemala City Chamber of Commerce">
-  <meta property="og:description" content="Connect with member businesses in Guatemala City. Browse local services and chamber membership information.">
-  <meta property="og:url" content="https://Kurobaza96.github.io/wdd231/chamber/index.html">
-  <meta property="og:image" content="https://Kurobaza96.github.io/wdd231/chamber/images/chamber-social.png">
-  <meta property="og:image:alt" content="Guatemala City Chamber of Commerce directory graphic">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Emanuel Herrera">
+    <meta name="description"
+          content="Explore Guatemala City Chamber of Commerce events, local weather, and featured member businesses.">
+
+    <title>Home | Guatemala City Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="Guatemala City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+          content="Discover local businesses, chamber events, and opportunities in Guatemala City.">
+    <meta property="og:image"
+          content="https://Kurobaza96.github.io/wdd231/chamber/images/chamber-social.png">
+    <meta property="og:url"
+          content="https://Kurobaza96.github.io/wdd231/chamber/index.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
+
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
+
+<!-- HEADER -->
+<header class="site-header">
     <div class="container header-content">
-      <a class="brand" href="index.html" aria-label="Guatemala City Chamber of Commerce home">
-        <img src="images/chamber-logo.svg" width="62" height="62" alt="Guatemala City Chamber logo">
-        <span class="brand-text">
-          <span class="brand-title">Guatemala City<br>Chamber of Commerce</span>
-          <span class="brand-subtitle">Connect • Grow • Thrive</span>
-        </span>
-      </a>
-      <button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation menu">
-        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        <span>Menu</span>
-      </button>
+
+        <a class="brand"
+           href="index.html"
+           aria-label="Guatemala City Chamber of Commerce home">
+
+            <img src="images/chamber-logo.svg"
+                 alt="Guatemala City Chamber logo"
+                 width="62"
+                 height="62">
+
+            <span class="brand-text">
+                <span class="brand-title">
+                    Guatemala City<br>
+                    Chamber of Commerce
+                </span>
+
+                <span class="brand-subtitle">
+                    Connect • Grow • Thrive
+                </span>
+            </span>
+        </a>
+
+        <button id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-controls="site-nav"
+                aria-expanded="false">
+            <span>Menu</span>
+        </button>
+
     </div>
-    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <ul class="container nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
+
+    <nav id="site-nav"
+         class="site-nav"
+         aria-label="Main navigation">
+
+        <ul class="container nav-links">
+            <li>
+                <a href="index.html" aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+        </ul>
+
     </nav>
-  </header>
-  <main id="main-content" class="container placeholder-main"><h1>Home</h1><p>The full home page will be developed in a later week. Start by exploring the business directory.</p><p><a href="directory.html">Browse the Chamber Directory</a></p></main>
-  <footer class="site-footer">
+</header>
+
+<!-- MAIN -->
+<main id="main-content" class="home-main">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Welcome to the chamber">
+
+        <img
+            src="images/guatemala-city-hero.svg"
+            alt="Illustrated Guatemala City skyline with mountains and a volcano"
+            class="hero-image"
+            width="1440"
+            height="560"
+            fetchpriority="high">
+
+        <div class="hero-overlay">
+            <div class="container hero-copy">
+
+                <p class="eyebrow">
+                    Stronger together in Guatemala City
+                </p>
+
+                <h1>Connect. Grow. Thrive.</h1>
+
+                <p>
+                    Bringing local businesses and our community
+                    together to build new opportunities.
+                </p>
+
+                <a href="join.html" class="cta-button">
+                    Join the Chamber
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container home-content">
+
+        <!-- WELCOME -->
+        <section class="home-intro">
+
+            <h2>Welcome to Our Chamber</h2>
+
+            <p>
+                Discover local businesses, build connections,
+                and take part in the events that strengthen
+                our city.
+            </p>
+
+        </section>
+
+        <!-- EVENTS AND WEATHER -->
+        <div class="home-information">
+
+            <!-- EVENTS -->
+            <section class="info-panel events-panel">
+
+                <h2>Current Events</h2>
+
+                <article class="event-item">
+
+                    <p class="event-date">
+                        November 19, 2026
+                    </p>
+
+                    <h3>Business Networking Evening</h3>
+
+                    <p>
+                        Meet entrepreneurs and community leaders
+                        for an evening of new connections.
+                    </p>
+
+                    <p class="event-location">
+                        Guatemala City · 6:00 PM
+                    </p>
+
+                </article>
+
+                <article class="event-item">
+
+                    <p class="event-date">
+                        November 26, 2026
+                    </p>
+
+                    <h3>Small Business Workshop</h3>
+
+                    <p>
+                        Explore practical ideas for digital
+                        growth and customer engagement.
+                    </p>
+
+                    <p class="event-location">
+                        Guatemala City · 9:00 AM
+                    </p>
+
+                </article>
+
+                <p class="demo-note">
+                    Sample events for this course project.
+                </p>
+
+            </section>
+
+            <!-- CURRENT WEATHER -->
+            <section class="info-panel weather-panel">
+
+                <h2>Current Weather</h2>
+
+                <p class="weather-location">
+                    Guatemala City, Guatemala
+                </p>
+
+                <div id="current-weather" aria-live="polite">
+                    <p>Loading weather...</p>
+                </div>
+
+            </section>
+
+            <!-- FORECAST -->
+            <section class="info-panel forecast-panel">
+
+                <h2>3-Day Forecast</h2>
+
+                <div id="weather-forecast" aria-live="polite">
+                    <p>Loading forecast...</p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- SPOTLIGHTS -->
+        <section class="spotlights-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        Our Business Community
+                    </p>
+
+                    <h2>Member Spotlights</h2>
+                </div>
+
+                <a href="directory.html">
+                    View Full Directory →
+                </a>
+
+            </div>
+
+            <div id="spotlight-cards"
+                 class="spotlight-grid"
+                 aria-live="polite">
+
+                <p>Loading featured members...</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
     <div class="container footer-grid">
-      <section>
-        <h2>Guatemala City Chamber of Commerce</h2>
-        <address>Guatemala City, Guatemala<br>
-          Tel: +502 5770-0825<br>
-          Email: <a href="mailto:info@GuatemalaChamber.com">info@GuatemalaChamber.com</a>
-        </address>
-      </section>
-      <section>
-        <h2>Our mission</h2>
-        <p>Connecting Businesses. Building Opportunities.</p>
-      </section>
-      <section>
-        <h2>Course project</h2>
-        <p>Developed by Emanuel Herrera<br>WDD 231 – Web Frontend Development I</p>
-      </section>
+
+        <section>
+            <h2>Guatemala City Chamber of Commerce</h2>
+
+            <address>
+                Guatemala City, Guatemala<br>
+                Tel: +502 5770-0825<br>
+                Email:
+                <a href="mailto:info@GuatemalaChamber.com">
+                    info@GuatemalaChamber.com
+                </a>
+            </address>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+
+            <p>
+                Connecting Businesses.
+                Building Opportunities.
+            </p>
+        </section>
+
+        <section>
+            <h2>Course Project</h2>
+
+            <p>
+                Developed by Emanuel Herrera<br>
+                WDD 231 – Web Frontend Development I
+            </p>
+        </section>
+
     </div>
+
     <div class="footer-bottom">
-      <div class="container">
-        <p>© <span id="current-year"></span> Guatemala City Chamber of Commerce | Emanuel Herrera</p>
-        <p>Last modification: <span id="last-modified"></span></p>
-      </div>
+        <div class="container">
+
+            <p>
+                © <span id="current-year"></span>
+                Guatemala City Chamber of Commerce |
+                Emanuel Herrera
+            </p>
+
+            <p>
+                Last modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
     </div>
-  </footer>
+
+</footer>
+
 </body>
 </html>
