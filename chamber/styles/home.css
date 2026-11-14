@@ -263,3 +263,22 @@
     }
 
 }
+
+
+
+.home-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-information,
+.spotlights-section {
+    width: 100%;
+    min-width: 0;
+}
+
+ */
+
+.spotlights-section {
+    grid-column: 1 / -1;
+}
