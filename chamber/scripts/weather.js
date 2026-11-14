@@ -5,7 +5,7 @@ const currentWeather = document.querySelector("#current-weather");
 const weatherForecast = document.querySelector("#weather-forecast");
 
 // OpenWeatherMap configuration
-const apiKey = "YOUR_API_KEY";
+const apiKey = "4eefd591cc6ace398b560d2d26c03c1e";
 
 const latitude = 14.63;
 const longitude = -90.51;
