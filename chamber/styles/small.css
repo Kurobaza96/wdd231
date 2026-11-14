@@ -154,6 +154,19 @@ a:hover {
     background: var(--gold);
 }
 
+/* NAVIGATION LINK CONTRAST */
+
+.site-nav a,
+.site-nav a:visited {
+    color: #ffffff;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
+    color: #ffffff;
+}
+
 /* Hero */
 .hero {
     background-color: var(--navy);
