@@ -128,6 +128,11 @@ a:hover {
     display: block;
 }
 
+.site-nav a[aria-current="page"] {
+    background-color: #123047;
+    color: #ffffff;
+}
+
 .nav-links {
     display: flex;
     flex-direction: column;
