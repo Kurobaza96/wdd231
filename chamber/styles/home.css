@@ -192,16 +192,20 @@
 /* SPOTLIGHTS */
 
 .spotlights-section {
+    display: block;
+    width: 100%;
+    min-width: 0;
     margin-top: 3rem;
 }
 
 .section-heading {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 1.2rem;
+    width: 100%;
 }
 
 .section-heading a {
@@ -210,10 +214,19 @@
 
 .spotlight-grid {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
+    width: 100%;
+    min-width: 0;
 }
 
 .spotlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -263,10 +276,7 @@
 .error-message {
     color: #8c2525;
 }
-
-/* =====================================
-   TABLET
-===================================== */
+/* TABLET */
 
 @media (min-width: 42rem) {
 
@@ -284,9 +294,7 @@
 
 }
 
-/* =====================================
-   DESKTOP
-===================================== */
+/* DESKTOP */
 
 @media (min-width: 65rem) {
 
@@ -299,6 +307,39 @@
     }
 
     .spotlight-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+/* HOME LAYOUT ALIGNMENT */
+
+.home-main .home-content {
+    display: block;
+    width: min(100% - 2rem, 1200px);
+    max-width: 1200px;
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+.home-main .home-information,
+.home-main .spotlights-section,
+.home-main .spotlight-grid {
+    width: 100%;
+    min-width: 0;
+}
+
+.home-main .spotlights-section {
+    grid-column: 1 / -1;
+}
+
+.home-main .spotlight-grid {
+    display: grid;
+}
+
+@media (min-width: 65rem) {
+
+    .home-main .spotlight-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
