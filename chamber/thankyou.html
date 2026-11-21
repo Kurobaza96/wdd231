@@ -1,0 +1,123 @@
+
+<main id="main-content" class="container join-main">
+
+  <section class="confirmation-panel">
+
+    <h1>Thank You for Applying!</h1>
+
+    <p>
+      We appreciate your interest in the Guatemala City
+      Chamber of Commerce.
+      Here is a summary of your application:
+    </p>
+
+    <div id="application-details" class="application-details">
+    </div>
+
+    <p>
+      <a class="return-home" href="index.html">
+        Return to Home
+      </a>
+    </p>
+
+  </section>
+
+</main>
+
+<form method="get" action="thankyou.html">
+
+  <label>
+    First Name *
+    <input
+      type="text"
+      name="firstName"
+      title="Enter your first name"
+      autocomplete="given-name"
+      required>
+  </label>
+
+  <label>
+    Last Name *
+    <input
+      type="text"
+      name="lastName"
+      title="Enter your last name"
+      autocomplete="family-name"
+      required>
+  </label>
+
+  <label>
+    Organizational Title
+    <input
+      type="text"
+      name="organizationTitle"
+      title="At least 7 characters. Letters, spaces, and hyphens only."
+      autocomplete="organization-title"
+      pattern="[A-Za-z\s-]{7,}">
+  </label>
+
+  <label>
+    Email Address *
+    <input
+      type="email"
+      name="email"
+      title="Enter your email address"
+      autocomplete="email"
+      placeholder="example@email.com"
+      required>
+  </label>
+
+  <label>
+    Mobile Phone *
+    <input
+      type="tel"
+      name="phone"
+      title="Enter your mobile phone number"
+      autocomplete="tel"
+      required>
+  </label>
+
+  <label>
+    Business / Organization Name *
+    <input
+      type="text"
+      name="organization"
+      title="Enter your business or organization name"
+      autocomplete="organization"
+      required>
+  </label>
+
+  <label>
+    Membership Level *
+    <select
+      name="membership"
+      title="Select a membership level"
+      required>
+      <option value="" disabled selected>
+        Select a membership level
+      </option>
+      <option value="np">NP Membership</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+  </label>
+
+  <label>
+    Business Description
+    <textarea
+      name="description"
+      title="Describe your business or organization"
+      rows="5"></textarea>
+  </label>
+
+  <input
+    type="hidden"
+    name="timestamp"
+    id="timestamp">
+
+  <button type="submit">
+    Submit Membership Application
+  </button>
+
+</form>

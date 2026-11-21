@@ -44,13 +44,214 @@
       </ul>
     </nav>
   </header>
-  <main id="main-content" class="container placeholder-main"><h1>Join</h1><p>Membership benefits and the application form will be developed in a later week.</p><p><a href="directory.html">Browse the Chamber Directory</a></p></main>
+  
+  <main id="main-content" class="container join-main">
+  
+    <section class="join-intro">
+      <h1>Join Our Chamber</h1>
+      <p>
+        Connect with Guatemala City's business community.
+        Complete the application below and explore membership benefits.
+      </p>
+    </section>
+  
+    <div class="join-layout">
+  
+      <!-- MEMBERSHIP APPLICATION -->
+  
+      <section class="application-panel" aria-labelledby="application-heading">
+  
+        <h2 id="application-heading">Membership Application</h2>
+  
+        <p class="form-note">Fields marked * are required.</p>
+  
+        <form method="get" action="thankyou.html" class="join-form">
+  
+          <label>
+            First Name *
+            <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+          </label>
+  
+          <label>
+            Last Name *
+            <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+          </label>
+  
+          <label>
+            Organizational Title
+            <input type="text" name="organizationTitle" title="At least seven letters, spaces or hyphens"
+              autocomplete="organization-title" pattern="[\p{L} -]{7,}">
+          </label>
+  
+          <label>
+            Email Address *
+            <input type="email" name="email" title="Enter your email address" autocomplete="email"
+              placeholder="name@example.com" required>
+          </label>
+  
+          <label>
+            Mobile Phone *
+            <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+          </label>
+  
+          <label>
+            Business / Organization Name *
+            <input type="text" name="organization" title="Enter your business or organization name"
+              autocomplete="organization" required>
+          </label>
+  
+          <label>
+            Membership Level *
+            <select name="membership" title="Choose a membership level" required>
+  
+              <option value="" disabled selected>
+                Select a membership level
+              </option>
+  
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+  
+            </select>
+          </label>
+  
+          <label>
+            Business / Organization Description
+            <textarea name="description" title="Describe your organization" rows="5"></textarea>
+          </label>
+  
+          <input type="hidden" name="timestamp" id="timestamp">
+  
+          <button type="submit" class="submit-application">
+            Submit Membership Application
+          </button>
+  
+        </form>
+  
+      </section>
+  
+      <!-- MEMBERSHIP CARDS -->
+  
+      <aside class="membership-levels" aria-labelledby="levels-heading">
+  
+        <h2 id="levels-heading">Membership Levels</h2>
+  
+        <p>Choose the right fit for your organization.</p>
+  
+        <div class="membership-card">
+          <h3>NP Membership</h3>
+          <p class="level-price">Free · Nonprofit</p>
+  
+          <button type="button" data-modal="np-modal" aria-haspopup="dialog">
+            View Benefits
+          </button>
+        </div>
+  
+        <div class="membership-card">
+          <h3>Bronze Membership</h3>
+          <p class="level-price">Q 500 / year</p>
+  
+          <button type="button" data-modal="bronze-modal" aria-haspopup="dialog">
+            View Benefits
+          </button>
+        </div>
+  
+        <div class="membership-card">
+          <h3>Silver Membership</h3>
+          <p class="level-price">Q 1,000 / year</p>
+  
+          <button type="button" data-modal="silver-modal" aria-haspopup="dialog">
+            View Benefits
+          </button>
+        </div>
+  
+        <div class="membership-card">
+          <h3>Gold Membership</h3>
+          <p class="level-price">Q 2,000 / year</p>
+  
+          <button type="button" data-modal="gold-modal" aria-haspopup="dialog">
+            View Benefits
+          </button>
+        </div>
+  
+      </aside>
+  
+    </div>
+  
+    <!-- MEMBERSHIP MODALS -->
+  
+    <dialog id="np-modal" aria-labelledby="np-title">
+  
+      <h2 id="np-title">NP Membership</h2>
+      <p>Free for nonprofit organizations.</p>
+  
+      <ul>
+        <li>Chamber directory listing</li>
+        <li>Community networking invitations</li>
+        <li>Monthly member newsletter</li>
+      </ul>
+  
+      <button type="button" class="close-modal">Close</button>
+  
+    </dialog>
+  
+    <dialog id="bronze-modal" aria-labelledby="bronze-title">
+  
+      <h2 id="bronze-title">Bronze Membership</h2>
+      <p>Q 500 per year.</p>
+  
+      <ul>
+        <li>All NP benefits</li>
+        <li>Access to member networking events</li>
+        <li>Business development workshops</li>
+      </ul>
+  
+      <button type="button" class="close-modal">Close</button>
+  
+    </dialog>
+  
+    <dialog id="silver-modal" aria-labelledby="silver-title">
+  
+      <h2 id="silver-title">Silver Membership</h2>
+      <p>Q 1,000 per year.</p>
+  
+      <ul>
+        <li>All Bronze benefits</li>
+        <li>Discounts on chamber events</li>
+        <li>Featured directory placement</li>
+        <li>Quarterly training sessions</li>
+      </ul>
+  
+      <button type="button" class="close-modal">Close</button>
+  
+    </dialog>
+  
+    <dialog id="gold-modal" aria-labelledby="gold-title">
+  
+      <h2 id="gold-title">Gold Membership</h2>
+      <p>Q 2,000 per year.</p>
+  
+      <ul>
+        <li>All Silver benefits</li>
+        <li>Home page member spotlight opportunities</li>
+        <li>Priority event sponsorship opportunities</li>
+        <li>Exclusive leadership roundtables</li>
+      </ul>
+  
+      <button type="button" class="close-modal">Close</button>
+  
+    </dialog>
+  
+  </main>
+
+
   <footer class="site-footer">
     <div class="container footer-grid">
       <section>
         <h2>Guatemala City Chamber of Commerce</h2>
         <address>Guatemala City, Guatemala<br>
-          Tel: +502 0000-0000 (demo)<br>
+          Tel: +502 5770-0825<br>
           Email: <a href="mailto:info@GuatemalaChamber.com">info@GuatemalaChamber.com</a>
         </address>
       </section>
