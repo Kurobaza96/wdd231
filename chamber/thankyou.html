@@ -1,176 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emanuel Herrera">
+    <meta name="description" content="Thank you for applying to join the Guatemala City Chamber of Commerce. Review your membership application information.">
+    <title>Thank You | Guatemala City Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
 
-  <meta name="description"
-    content="Thank you for applying to join the Guatemala City Chamber of Commerce. Review your membership application details.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <meta name="author" content="Emanuel Herrera">
-
-  <title>Thank You | Guatemala City Chamber of Commerce</title>
-
-    <link rel="icon" href="images/favicon.ico">  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/chamber.css">
-  <link rel="stylesheet" href="styles/join.css">
-
-  <script src="scripts/main.js" defer></script>
-  <script src="scripts/thankyou.js" defer></script>
-
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thank You | Guatemala City Chamber of Commerce">
+    <meta property="og:description" content="Thank you for applying to join the Guatemala City Chamber of Commerce. Review your membership application information.">
+    <meta property="og:image" content="https://kurobaza96.github.io/wdd231/chamber/images/chamber-social.png">
+    <meta property="og:url" content="https://kurobaza96.github.io/wdd231/chamber/thankyou.html">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 42rem)">
+    <link rel="stylesheet" href="styles/join.css">
+    
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
-
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- HEADER -->
-  <header class="site-header">
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container header-content">
 
-    <div class="container header-inner">
+        <a class="brand"
+           href="index.html"
+           aria-label="Guatemala City Chamber of Commerce home">
 
-      <a class="brand" href="index.html" aria-label="Guatemala City Chamber of Commerce Home">
+            <img src="images/chamber-logo.svg"
+                 alt="Guatemala City Chamber logo"
+                 width="62"
+                 height="62">
 
-        <img src="images/logo.svg" alt="Guatemala City Chamber of Commerce logo" width="70" height="70">
+            <span class="brand-text">
+                <span class="brand-title">
+                    Guatemala City<br>
+                    Chamber of Commerce
+                </span>
 
-        <div class="brand-text">
-          <span class="brand-title">Guatemala City</span>
-          <span class="brand-subtitle">Chamber of Commerce</span>
-        </div>
+                <span class="brand-subtitle">
+                    Connect • Grow • Thrive
+                </span>
+            </span>
+        </a>
 
-      </a>
-
-      <button id="menu-button" class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false"
-        aria-controls="primary-navigation">
-        ☰
-      </button>
-
-      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
-
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html" aria-current="page">Join</a>
-        <a href="discover.html">Discover</a>
-
-      </nav>
+        <button id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-controls="site-nav"
+                aria-expanded="false">
+            <span>Menu</span>
+        </button>
 
     </div>
 
-  </header>
+    <nav id="site-nav"
+         class="site-nav"
+         aria-label="Main navigation">
 
-  <!-- MAIN CONTENT -->
-  <main id="main-content" class="container join-main">
+        <ul class="container nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+            <li>
+                <a href="join.html" aria-current="page">Join</a>
+            </li>
+        </ul>
 
-    <section class="confirmation-panel" aria-labelledby="confirmation-title">
+    </nav>
+</header>
 
-      <div class="confirmation-icon" aria-hidden="true">
-        ✓
-      </div>
-
-      <h1 id="confirmation-title">
-        Thank You for Applying!
-      </h1>
-
-      <p class="confirmation-message">
-        We appreciate your interest in joining the
-        <strong>Guatemala City Chamber of Commerce.</strong>
-      </p>
-
-      <p>
-        Your membership application has been submitted.
-        Below is a summary of the information you provided.
-      </p>
-
-      <!-- APPLICATION SUMMARY -->
-      <section class="application-summary" aria-labelledby="summary-title">
-
-        <h2 id="summary-title">
-          Application Summary
-        </h2>
-
-        <div id="application-details" class="application-details" aria-live="polite">
-
-          <!-- Information populated by thankyou.js -->
-
+<!-- MAIN -->
+<main id="main-content">
+    <!-- THANK YOU HERO -->
+    <section class="join-hero join-hero-short" aria-labelledby="confirmation-title">
+        <div class="container join-hero-content">
+            <p class="eyebrow">Welcome to our business community</p>
+            <h1 id="confirmation-title">Thank You for Applying!</h1>
+            <p>We're glad you're interested in connecting, growing, and thriving with the Guatemala City Chamber.</p>
         </div>
-
-      </section>
-
-      <p class="confirmation-footer-message">
-        Thank you for taking the first step toward connecting,
-        growing, and thriving with our business community.
-      </p>
-
-      <div class="confirmation-actions">
-
-        <a class="return-home" href="index.html">
-          Return to Home
-        </a>
-
-        <a class="return-directory" href="directory.html">
-          Explore Our Directory
-        </a>
-
-      </div>
-
     </section>
 
-  </main>
+    <div class="container join-main thankyou-main">
+        <section class="confirmation-panel" aria-labelledby="summary-heading">
+            <div class="confirmation-icon" aria-hidden="true">✓</div>
+            <h2 id="summary-heading">Application Summary</h2>
+            <p class="confirmation-message">Thank you for completing the membership application form. Below is the information you provided.</p>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
+            <!-- APPLICATION SUMMARY -->
+            <div id="application-details" class="application-details" aria-live="polite"></div>
 
-    <div class="container footer-inner">
+            <!-- CONFIRMATION ACTIONS -->
+            <div class="confirmation-actions">
+                <a class="return-home" href="index.html">Return to Home</a>
+                <a class="return-directory" href="directory.html">Explore Our Directory</a>
+            </div>
+        </section>
+    </div>
+</main>
 
-      <div class="footer-info">
+<!-- FOOTER -->
+<footer class="site-footer">
 
-        <h2>Guatemala City Chamber of Commerce</h2>
+    <div class="container footer-grid">
 
-        <p>Guatemala City, Guatemala</p>
+        <section>
+            <h2>Guatemala City Chamber of Commerce</h2>
 
-        <p>
-          Connecting businesses and strengthening
-          our community.
-        </p>
+            <address>
+                Guatemala City, Guatemala<br>
+                Tel: +502 5770-0825<br>
+                Email:
+                <a href="mailto:info@GuatemalaChamber.com">
+                    info@GuatemalaChamber.com
+                </a>
+            </address>
+        </section>
 
-      </div>
+        <section>
+            <h2>Our Mission</h2>
 
-      <div class="footer-links">
+            <p>
+                Connecting Businesses.
+                Building Opportunities.
+            </p>
+        </section>
 
-        <h2>Quick Links</h2>
+        <section>
+            <h2>Course Project</h2>
 
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-        <a href="discover.html">Discover</a>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <p>
-          &copy; <span id="currentyear"></span>
-          Guatemala City Chamber of Commerce
-        </p>
-
-        <p>
-          Emanuel Herrera | WDD 231
-        </p>
-
-        <p id="lastModified"></p>
-
-      </div>
+            <p>
+                Developed by Emanuel Herrera<br>
+                WDD 231 – Web Frontend Development I
+            </p>
+        </section>
 
     </div>
 
-  </footer>
+    <div class="footer-bottom">
+        <div class="container">
 
+            <p>
+                © <span id="current-year"></span>
+                Guatemala City Chamber of Commerce |
+                Emanuel Herrera
+            </p>
+
+            <p>
+                Last modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+    </div>
+
+</footer>
 </body>
-
 </html>
